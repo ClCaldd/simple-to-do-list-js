@@ -1,0 +1,68 @@
+{
+  "todos": [
+    {
+      "uuid": "9004a747-7b3e-432d-aaf5-17a5417d2954",
+      "title": "atv helio",
+      "description": "fazer a atividade ate 10/12",
+      "status": "OK",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:32:47.144Z"
+    },
+    {
+      "uuid": "c0367b02-e241-4128-9907-5af01485a78b",
+      "title": "projeto betio",
+      "description": "entrega do projeto no dia 08/12",
+      "status": "PENDING",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:33:30.826Z"
+    },
+    {
+      "uuid": "ff81a97b-11e3-4fec-a5dd-544793d5db01",
+      "title": "fazer macarrao",
+      "description": "preparar almoço para comer",
+      "status": "PENDING",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:34:24.006Z"
+    },
+    {
+      "uuid": "a95bd951-001c-41ed-a7da-7296e056db0d",
+      "title": "planejar atv X",
+      "description": "planejar novas ativadades para o time A",
+      "status": "PENDING",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:35:01.916Z"
+    },
+    {
+      "uuid": "930150dc-40b2-41aa-94d1-a852254903a5",
+      "title": "planejar atv Y",
+      "description": "planejar novas ativadades para o time B",
+      "status": "PENDING",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:35:08.759Z"
+    },
+    {
+      "uuid": "3e9719df-fa61-40f0-956d-38e62c4efb15",
+      "title": "organizar projetoHE",
+      "description": "A helo ja ta organizando",
+      "status": "PENDING",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:35:33.605Z"
+    },
+    {
+      "uuid": "0f544a80-7e7a-4eca-807c-b9837f62a4ea",
+      "title": "encerrar atividade",
+      "description": "tenho que encerrar essa atividade",
+      "status": "PENDING",
+      "disabled_at": "2025-12-10T03:50:56.268Z",
+      "created_at": "2025-12-10T03:50:40.165Z"
+    },
+    {
+      "uuid": "71c56b78-2f92-4a53-95ff-3598dcf86b6b",
+      "title": "encerrar atividade",
+      "description": "tenho que encerrar essa atividade",
+      "status": "OK",
+      "disabled_at": null,
+      "created_at": "2025-12-10T03:51:01.163Z"
+    }
+  ]
+}
