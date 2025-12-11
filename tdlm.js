@@ -12,19 +12,6 @@ let index = null
 
 
 // ======================================================================================= FUNCTIONS ================================================================
-const input = (text) => {
-    const readline = require("readline").createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-    let read
-    readline.question(text, resposta => {
-      read = resposta;
-      readline.close();
-    });
-    return read
-}
-
 const error = (text) => {
     console.log("\x1b[31m"+text+"\x1b[0m");
 }
@@ -35,11 +22,9 @@ const success = (text) => {
 const pending = (text) => {
     console.log("\x1b[33m"+text+"\x1b[0m");
 }
-
 const finish = (text) => {
     console.log("\x1b[34m"+text+"\x1b[0m");
 }
-
 // ================================================================================================================================================================
 
 
@@ -48,22 +33,27 @@ let data = {};
 if (fs.existsSync(json_path))
     try
     {
-        data = JSON.parse(fs.readFileSync(json_path, 'utf8'));
+        data = JSON.parse(fs.readFileSync(json_path, 'utf8'))
     }
     catch
     {
         fs.writeFileSync(json_path, JSON.stringify(data, null, 2), 'utf8');    
     }
 else
-    fs.writeFileSync(json_path, JSON.stringify(data, null, 2), 'utf8');
+    fs.writeFileSync(json_path, JSON.stringify(data, null, 2), 'utf8')
+
+
+
 
 
 if(data.todos === undefined)
     data.todos = []
 
-const args = process.argv.slice(2);
 
+
+const args = process.argv.slice(2);
 const type = args[0];
+
 switch(type)
 {
     case 'add':
@@ -97,7 +87,6 @@ switch(type)
         console.log('| '+ new_todo.uuid +' | '+ '\t\t\t' + '\x1b['+(new_todo.title.length+1)+'D' + new_todo.title + ' | ' + '\t\t\t\t\t\t\t\t\t' +  '\x1b['+(new_todo.description.length)+'D' +  new_todo.description +' | '+'\t\t' +  '\x1b['+(new_todo.status.length+1)+'D' + new_todo.status +'|')
         console.log('+======================================+========================+========================================================================+=============+')
         success('[ADDED]')
-
         break
     
     case 'remove':
@@ -218,6 +207,7 @@ switch(type)
         error('command not found!')
         break
 }
+
 
 
 fs.writeFileSync(json_path, JSON.stringify(data, null, 2), 'utf8');
